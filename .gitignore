@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+# build output
+.next/
+out/
+# local env and secrets
+.env
+.env.*
+!.env.example
+.env*.local
+# deployment
+.vercel
+# misc
+.DS_Store
+npm-debug.log*
