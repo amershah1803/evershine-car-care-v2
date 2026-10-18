@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/next';
 import './globals.css';
 import { LanguageProvider } from '@/components/LanguageProvider';
 import SiteHeader from '@/components/SiteHeader';
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
           <main id="main">{children}</main>
           <SiteFooter />
         </LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );

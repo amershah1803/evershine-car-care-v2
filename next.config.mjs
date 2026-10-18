@@ -29,6 +29,7 @@ const securityHeaders = [
 const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
+  outputFileTracingRoot: process.cwd(),
   async headers() {
     return [{ source: '/:path*', headers: securityHeaders }];
   },
